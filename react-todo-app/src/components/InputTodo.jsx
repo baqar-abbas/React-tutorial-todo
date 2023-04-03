@@ -11,15 +11,13 @@ const InputTodo = ({ addTodoItem }) => {
       addTodoItem(title);
       setTitle('');
     } else {
-      // alert('Please add item');
+      
       setError('Please add item');
       setTimeout(() => {
         setError('');
       }, 2000);
     }
-    // addTodoItem(title);
-    // console.log(title);
-    // setTitle('');
+    
   };
     return (
       <>
@@ -34,7 +32,7 @@ const InputTodo = ({ addTodoItem }) => {
       
       <button className="input-submit">Submit</button>
       <br />
-      {/* {error && <span className="error">{error}</span>} */}
+      
     </form>
     {error && <span className="error">{error}</span>}
     </>
